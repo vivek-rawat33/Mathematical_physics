@@ -66,24 +66,20 @@
 # plt.legend()
 # plt.show()
 
-
 import math
 import matplotlib.pyplot as plt
-x = [i * 0.1 for i in range(-9, 10)]
+x = [i * 0.1 for i in range(-9, 11)] 
 n = int(input("Enter the number of terms for the expansion (n): "))
 def log_approx(x_values, n):
     y_values = []
     for x in x_values:
-        if x <= -1: 
-            y_values.append(float('nan'))
-        else:
-            sum = 0
-            for i in range(1, n + 1):
-                sum += ((-1) ** (i + 1)) * (x ** i) / i
-            y_values.append(sum)
+        sum = 0
+        for i in range(1, n + 1):
+            sum += ((-1) ** (i + 1)) * (x ** i) / i
+        y_values.append(sum)
     return y_values
 result = log_approx(x, n)
-actual = [math.log(1 + i) if i > -1 else float('nan') for i in x]
+actual = [math.log(1 + i) for i in x]
 plt.scatter(x, result, color='red', label='Approximation')
 plt.plot(x, actual, color='black', label='Actual log(1+x)')
 plt.xlabel('x')
