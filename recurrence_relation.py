@@ -1,7 +1,7 @@
 
 import matplotlib.pyplot as plt
 import numpy as np
-def reucurrence_relation(n,x):
+def recurrence_relation(n,x):
     p_0=0
     p_1 =x
     for i in range(1,n+1):
@@ -21,7 +21,7 @@ def reucurrence_relation(n,x):
     
 x_values= np.linspace(-1,1,400)
 for n in range(6):
-    y_val=[reucurrence_relation(n,x) for x in x_values]
+    y_val=[recurrence_relation(n,x) for x in x_values]
     plt.plot(x_values,y_val,label=f"n={n}")
 plt.title("Legendre plotynomial ")
 plt.legend()
