@@ -1,7 +1,8 @@
 import math as M
 def simpson_integration(f, a, b, n):
     if n % 2 == 1:
-        raise ValueError("Number of subintervals must be even.")
+       print("Number of subintervals must be even.")
+       return 
 
     h = (b - a) / n
     x = a
