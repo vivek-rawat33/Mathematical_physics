@@ -18,9 +18,9 @@ def simpson_integration(f, a, b, n):
     integral *= h / 3
     return integral
 def example_function(x):
-    return M.exp(x)
-a =int(input("enter the lower limit :"))
-b =int(input("enter the upper limit :"))
-n = int(input("enter the number of iterations"))
+    return M.log(M.sin(x))
+a =float(input("enter the lower limit :"))
+b =float(input("enter the upper limit :"))
+n = int(input("enter the number of iterations :"))
 result = simpson_integration(example_function, a, b, n)
 print("The integral is:", result)
