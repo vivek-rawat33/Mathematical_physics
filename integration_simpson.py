@@ -17,7 +17,7 @@ def simpson_integration(f, a, b, n):
 
     integral *= h / 3
     return integral
-def example_function(x):
+def example_function(x):  
     return M.log(M.sin(x))
 a =float(input("enter the lower limit :"))
 b =float(input("enter the upper limit :"))
