@@ -23,7 +23,7 @@
 # print(f"y(0.1) = {y[1]}")
 # print(f"y(0.2) = {y[2]}")
 
-
+# rk - 4 
 def runge_kutta_method(f, x0, y0, h, n):
     x = [x0]
     y = [y0]
