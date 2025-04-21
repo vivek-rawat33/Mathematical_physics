@@ -1,12 +1,12 @@
-# import matplotlib.pyplot as plt
-# import math
+import matplotlib.pyplot as plt
+import math
 
-# # Data points
-# p = [i / 2 for i in range(1, 7)]
-# v = [1.62, 1.00, 0.75, 0.62, 0.52, 0.46]
+# Data points
+p = [i / 2 for i in range(1, 7)]
+v = [1.62, 1.00, 0.75, 0.62, 0.52, 0.46]
 
-# # p=[i for i in range(1951,1958)]
-# # v=[201,263,314,395,427,504,612]
+# p=[i for i in range(1951,1958)]
+# v=[201,263,314,395,427,504,612]
 
 # # Logarithmic transformation
 # X = [math.log(i) for i in p]
@@ -38,9 +38,9 @@ import matplotlib.pyplot as plt
 import math
 import numpy as np
 
-# Data points
-p = [1,1.2,1.4,1.6,1.8,2]
-v = [5,8.7,13.2,20.5,29.5,42]
+# # Data points
+# p = [1,1.2,1.4,1.6,1.8,2]
+# v = [5,8.7,13.2,20.5,29.5,42]
 
 # Logarithmic transformation
 X = [math.log(i) for i in p]
